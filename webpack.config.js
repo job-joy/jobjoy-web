@@ -10,7 +10,7 @@ module.exports = {
   module: {
    rules:[
     {
-     test: /\.?js$/,
+     test: /\.(js|jsx|ts|tsx)$/,
      exclude: /node_modules/,
      use: {
       loader: "babel-loader",
@@ -32,6 +32,13 @@ module.exports = {
        use: ['@svgr/webpack'],
      },
    ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    alias: {
+      'react/jsx-dev-runtime': 'react/jsx-dev-runtime.js',
+      'react/jsx-runtime': 'react/jsx-runtime.js',
+    },
   },
   plugins: [
    new HtmlWebpackPlugin({
