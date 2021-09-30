@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+      "jsx": "react",
       "target": "es2019",
       "module": "es2015",
       "lib": ["es2020", "DOM", "DOM.Iterable"],
