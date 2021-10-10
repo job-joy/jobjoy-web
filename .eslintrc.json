@@ -20,8 +20,6 @@
     "rules": {
       "prettier/prettier": "warn",
       "no-prototype-builtins": "warn",
-      "object-curly-spacing": "warn",
-      "no-only-tests/no-only-tests": "warn",
       "@typescript-eslint/ban-types": "warn",
       "@typescript-eslint/explicit-module-boundary-types": "warn",
       "@typescript-eslint/no-empty-function": "warn",
