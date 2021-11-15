@@ -1,15 +1,12 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-import Login from "./Components/Login";
+import React, { StrictMode } from "react";
+import Routes from "./Routes";
+import { HashRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <Router>
-      <Switch>
-        <Route path="/" exact component={Login} />
-      </Switch>
-    </Router>
+    <StrictMode>
+      <Routes />
+    </StrictMode>
   );
 };
 export default App;
