@@ -1,0 +1,28 @@
+.main {
+  bottom: 0;
+  width: 100%;
+  background: blue;
+  height: 200;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 23%;
+  height: 80%;
+}
+.mainFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 33%;
+  height: 80%;
+}
+.txtFooter {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80px;
+}

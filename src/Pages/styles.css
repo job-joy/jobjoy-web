@@ -1,0 +1,8 @@
+.page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: "linear-gradient(90deg rgba(47;87,147,1) 0%, rgba(208,138,137,1) 43%, rgba(110,102,139,1) 91%)";
+}

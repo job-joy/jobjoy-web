@@ -1,76 +1,50 @@
 {
-  "name": "progressionhub-web",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "webpack serve",
-    "start": "webpack serve",
-    "clean": "tsc --build --clean",
-    "build": "npm-run-all --serial format build:ts",
-    "build:ts": "tsc --build --pretty",
-    "watch": "npm-run-all --parallel \"dev-server --watch\" \"build:ts --watch --preserveWatchOutput\"",
-    "full-upgrade": "yarn upgrade-interactive --latest",
-    "format": "yarn format:eslint && yarn format:prettier",
-    "format:eslint": "eslint \"**/*.{js,ts,tsx}\" --fix",
-    "format:prettier": "prettier \"**/*.{cjs,js,json,md,ts,tsx}\" --write",
-    "test": "yarn build:ts && jest",
-    "watch:test": "tsc --build test/tsconfig.json -w"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mersad998/progressionhub-web.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mersad998/progressionhub-web/issues"
-  },
-  "homepage": "https://github.com/mersad998/progressionhub-web#readme",
+  "name": "material-template",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@emotion/react": "^11.5.0",
-    "@emotion/styled": "^11.3.0",
-    "@mui/icons-material": "^5.1.0",
-    "@mui/material": "^5.1.0",
-    "i18next": "^21.4.2",
-    "i18next-browser-languagedetector": "^6.1.2",
-    "i18next-http-backend": "^1.3.1",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.3.1",
+    "@mui/material": "^5.4.0",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.25.0",
+    "global": "^4.4.0",
+    "json-server": "^0.17.0",
+    "next": "^12.0.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "react-i18next": "^11.14.2",
-    "react-router-dom": "^6.F0.2"
+    "react-input-verification-code": "^0.8.0",
+    "react-query": "^3.34.14",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "@babel/core": "^7.15.5",
-    "@babel/preset-env": "^7.15.6",
-    "@babel/preset-react": "^7.14.5",
-    "@types/cypress": "^1.1.3",
-    "@types/enzyme": "^3.10.9",
-    "@types/jest": "^27.0.2",
-    "@types/wait-on": "^5.3.1",
-    "@typescript-eslint/eslint-plugin": "^4.32.0",
-    "@typescript-eslint/parser": "^4.32.0",
-    "babel-loader": "^8.2.2",
-    "cypress": "^8.5.0",
-    "html-webpack-plugin": "^5.3.2",
-    "typescript": "^4.4.3",
-    "webpack": "^5.55.1",
-    "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.3.0",
-    "cypress-file-upload": "^5.0.8",
-    "cypress-real-events": "^1.4.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
-    "eslint": "^7.17.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-cypress": "^2.12.1",
-    "eslint-plugin-no-only-tests": "^2.6.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "jest": "^26.6.3",
-    "jest-enzyme": "^7.1.2",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.4.1",
-    "ts-jest": "^26.5.6"
+  "scripts": {
+    "start": "next dev",
+    "serve": "next start",
+    "build": "next build",
+    "test": "next test",
+    "eject": "next eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
